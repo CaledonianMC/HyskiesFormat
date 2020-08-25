@@ -1,0 +1,22 @@
+name: HyskiesFormat
+version: ${project.version}
+main: net.hyskies.main.Main
+prefix: HyskiesFormat
+softdepend: [PlaceholderAPI]
+authors: [Caledonian]
+description: Hyskies message formatting
+website: net.hyskies
+commands:
+  hyskiesformat:
+    description: Main plugin command
+    aliases: [hf, hyskies, hyskiesf]
+  anvil:
+    description: Open a remote anvil
+  brew:
+    description: Open a remote brewing stand
+  craft:
+    description: Open a remote crafting table
+  enchant:
+    description: Open a remote enchanting table
+  furnace:
+    description: Open a remote furnace

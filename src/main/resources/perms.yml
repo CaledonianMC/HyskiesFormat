@@ -1,0 +1,52 @@
+# HyskiesFormat permission file generated using HyskiesFormat-1.0-SNAPSHOT
+# This plugin mainly supports 1.8.8, but may work in later versions
+
+# Core Permissions
+core-cmd: 'hyskiesformat.corecmd'
+reload: 'hyskiesformat.reload'
+
+# Modules
+admin-togglejoin: 'hyskiesformat.admin.togglejoin'
+
+# Death Permssions
+1: 'hyskiesformatting.death.1'
+2: 'hyskiesformatting.death.2'
+3: 'hyskiesformatting.death.3'
+4: 'hyskiesformatting.death.4'
+5: 'hyskiesformatting.death.5'
+6: 'hyskiesformatting.death.6'
+7: 'hyskiesformatting.death.7'
+8: 'hyskiesformatting.death.8'
+9: 'hyskiesformatting.death.9'
+10: 'hyskiesformatting.death.10'
+11: 'hyskiesformatting.death.11'
+12: 'hyskiesformatting.death.12'
+13: 'hyskiesformatting.death.13'
+14: 'hyskiesformatting.death.14'
+15: 'hyskiesformatting.death.15'
+16: 'hyskiesformatting.death.16'
+17: 'hyskiesformatting.death.17'
+18: 'hyskiesformatting.death.18'
+19: 'hyskiesformatting.death.19'
+20: 'hyskiesformatting.death.20'
+
+# Join Permissions
+join-1: 'hyskiesformatting.join.1'
+join-2: 'hyskiesformatting.join.2'
+join-3: 'hyskiesformatting.join.3'
+join-4: 'hyskiesformatting.join.4'
+join-5: 'hyskiesformatting.join.5'
+
+# Leave Permissions
+leave-1: 'hyskiesformatting.leave.1'
+leave-2: 'hyskiesformatting.leave.2'
+leave-3: 'hyskiesformatting.leave.3'
+leave-4: 'hyskiesformatting.leave.4'
+leave-5: 'hyskiesformatting.leave.5'
+
+# Remote Tables
+anvil: 'hyskiesformatting.anvil'
+brew: 'hyskiesformatting.brew'
+crafting-table: 'hyskiesformatting.craft'
+enchant: 'hyskiesformatting.enchant'
+furnace: 'hyskiesformatting.furnace'
