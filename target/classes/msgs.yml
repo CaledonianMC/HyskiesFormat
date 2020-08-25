@@ -1,0 +1,81 @@
+# HyskiesFormat message file generated using HyskiesFormat-1.0-SNAPSHOT
+# This plugin mainly supports 1.8.8, but may work in later versions
+
+# Main Messages
+prefix: '&8(&b&lH&f&lS&8) &f'
+no-permission: '%prefix% You do not have permission to execute this command.'
+console-error: '&cYou must be a player to execute this command.'
+player-not-found: '%prefix% That player was &bnot &ffound.'
+config-reload: '%prefix% The configuration is reloading...'
+404: '%prefix% That alias does &bnot exist&f. For help, type &b/hf help&f.'
+help-1:
+  - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
+  - '     &bHyskies Formatting'
+  - '&f * &b/hyskiesformatting &8- &fMain command'
+  - '&f * &b/togglejoin &8- &fToggle your join visibility.'
+  - '&f * &b/toggledeaths &8- &fToggle your deaths visibility.'
+  - '&f '
+  - '&7&o(( &7&oYou do not have &f&oPermission &7&oto view admin cmds ))'
+  - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
+help-2:
+  - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
+  - '     &bHyskies Formatting &7(Admin)'
+  - '&f * &b/hyskiesformatting &8- &fMain command'
+  - '&f * &b/hf reload &8- &fReload all configuration files.'
+  - '&f '
+  - '&7&o(( &f&oView &7&ouser commands with &f&o/hf help &7&o))'
+  - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
+
+# Core-Cmd
+core-cmd-user:
+  - '%prefix% This server is running &bHyskiesFormat &fby &bCaledonian EH'
+  - '&7&o(( You do not have &f&oPermission &7&oto view further ))'
+core-cmd-admin:
+  - '%prefix% This server is running &bHyskiesFormat &fby &bCaledonian EH &fv&b%version%'
+  - '&7&o(( Type &f&o/hyskiesformat help &7&ofor more &f&oInformation ))'
+
+# Death Messages
+# PLACEHOLDERS: %prefix%, %killer%, %player%, %weapon%
+default: '%prefix% &b%killer% &fkilled &b%player% &fusing &b%weapon%&f.'
+1: '%prefix% &b%killer% &fshot &b%player% &fout of a cannon using &b%weapon%&f.'
+2: '%prefix% &b%killer% &fmade &b%player% &fAlt-f4 using &b%weapon%&f.'
+3: '%prefix% &b%killer% &fturned &b%player%''s &finsides into outsides using &b%weapon%&f.'
+4: '%prefix% &b%killer% &fsent &b%player% &fto the &nshadow&r realm using &b%weapon%&f.'
+5: '%prefix% &b%player% &fcommited a self-destruct infront of &b%killer%&f.'
+6: '%prefix% &b%killer% &fset &b%player% &fablaze using &b%weapon%&f.'
+7: '%prefix% &b%killer% &fcrashed &b%player%''s &fepic party using &b%weapon%&f.'
+8: '%prefix% &b%killer% &ffroze &b%player% &fin the artic circle with &b%weapon%&f.'
+9: '%prefix% &b%killer% &fbrought &b%player% &ffrom &bHys&fkkies to &bHyf&fall with &b%weapon%&f.'
+10: '%prefix% &b%killer% &ftook &b%player%''s &fissues into their &bown &fhands&f.'
+11: '%prefix% &b%killer% &fset &b%player% &fablaze using &b%weapon%&f.'
+12: ''
+13: ''
+14: ''
+15: ''
+16: ''
+17: ''
+18: ''
+19: ''
+20: ''
+
+# Join Messages
+# PLACEHOLDERS: %prefix%, %player%
+join-1: '%prefix% &b%player% &fcannonballed into your realm.'
+join-2: '%prefix% Our favorite &b%player% &fhas joined this realm.'
+join-3: '%prefix% &b%player% &fhas joined to grind that playtime top!'
+join-4: '%prefix% &b%player% &fjoined.'
+join-5: '%prefix% &b%player% &fjoined.'
+
+# Leave Messages
+leave-1: '%prefix% &b%player% &fleft.'
+leave-2: '%prefix% &b%player% &fleft.'
+leave-3: '%prefix% &b%player% &fleft.'
+leave-4: 'hyskiesformatting.leave.4'
+leave-5: 'hyskiesformatting.leave.5'
+
+# Remote Tables
+anvil: '%prefix% You opened a remote &bAnvil&f.'
+brew: '%prefix% You opened a remote &bBrewing Stand&f.'
+crafting-table: '%prefix% You opened a remote &bCrafting Table&f.'
+enchant: '%prefix% You opened a remote &bEnchanting Table&f.'
+furnace: '%prefix% You opened a remote &bFurnace&f.'
