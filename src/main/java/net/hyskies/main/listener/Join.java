@@ -3,10 +3,13 @@ package net.hyskies.main.listener;
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.hyskies.main.utils.Files;
 import net.hyskies.main.utils.Utils;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.inventory.Inventory;
 
 public class Join implements Listener {
     String prefix = Utils.chat(Files.msgs.getString("prefix"));

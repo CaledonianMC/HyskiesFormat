@@ -22,7 +22,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("2"))) {
@@ -30,7 +30,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("3"))) {
@@ -38,7 +38,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("4"))) {
@@ -46,7 +46,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("5"))) {
@@ -54,7 +54,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("6"))) {
@@ -62,7 +62,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("7"))) {
@@ -70,7 +70,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("8"))) {
@@ -78,7 +78,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("9"))) {
@@ -86,7 +86,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("10"))) {
@@ -94,7 +94,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("11"))) {
@@ -102,7 +102,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("12"))) {
@@ -110,7 +110,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("13"))) {
@@ -118,7 +118,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("14"))) {
@@ -126,7 +126,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("15"))) {
@@ -134,7 +134,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("16"))) {
@@ -142,7 +142,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("17"))) {
@@ -150,7 +150,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("18"))) {
@@ -158,7 +158,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("19"))) {
@@ -166,7 +166,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else if (t.hasPermission(Files.perms.getString("20"))) {
@@ -174,7 +174,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }else{
@@ -182,7 +182,7 @@ public class Death implements Listener {
                 if (!t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
                     msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getType().name());
                 } else if (t.getInventory().getItemInHand().getItemMeta().hasDisplayName()) {
-                    msg = msg.replace("%weapon%", t.getInventory().getItemInHand().getItemMeta().getDisplayName());
+                    msg = msg.replace("%weapon%", Utils.chat(t.getInventory().getItemInHand().getItemMeta().getDisplayName()));
                 }
                 e.setDeathMessage(Utils.chat(msg));
             }
