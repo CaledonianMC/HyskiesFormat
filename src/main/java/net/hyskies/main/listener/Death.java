@@ -6,13 +6,14 @@ import net.hyskies.main.utils.Utils;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
 public class Death implements Listener {
     String prefix = Utils.chat(Files.msgs.getString("prefix"));
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void Death(PlayerDeathEvent e) {
         if (e.getEntityType().equals(EntityType.PLAYER) && (e.getEntity().getKiller().getType().equals(EntityType.PLAYER))) {
             Player p = (Player) e.getEntity();
