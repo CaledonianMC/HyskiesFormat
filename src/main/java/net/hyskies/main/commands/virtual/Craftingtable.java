@@ -20,7 +20,7 @@ public class Craftingtable implements CommandHandler {
                 p.sendMessage(Utils.chat(msg));
                 Location l = p.getLocation();
                 p.openWorkbench(l, true);
-            }
+            }else{p.sendMessage(Utils.chat(Files.msgs.getString("no-permission")));}
         }
     }
 }

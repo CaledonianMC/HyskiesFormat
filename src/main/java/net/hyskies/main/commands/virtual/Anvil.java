@@ -22,7 +22,7 @@ public class Anvil implements CommandHandler {
                 p.sendMessage(Utils.chat(msg));
                 Inventory i = Bukkit.createInventory(p, InventoryType.ANVIL);
                 p.openInventory(i);
-            }
+            }else{p.sendMessage(Utils.chat(Files.msgs.getString("no-permission")));}
         }
     }
 }

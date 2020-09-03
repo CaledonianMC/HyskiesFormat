@@ -1,9 +1,10 @@
-# HyskiesFormat permission file generated using HyskiesFormat-1.0-SNAPSHOT
+# HyskiesFormat permission file generated using HyskiesFormat-${project.version}
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 # Core Permissions
 core-cmd: 'hyskiesformat.corecmd'
 reload: 'hyskiesformat.reload'
+staff: 'hyskiesformat.staff'
 
 # Modules
 admin-togglejoin: 'hyskiesformat.admin.togglejoin'

@@ -16,7 +16,7 @@ public class Files {
     public static FileConfiguration msgs;
 
     public static File permFile;
-    public static FileConfiguration perms;
+    public static YamlConfiguration perms;
 
     public static void base(Main m) {
         if (!m.getDataFolder().exists()) {
@@ -45,6 +45,7 @@ public class Files {
         }
 
         config = YamlConfiguration.loadConfiguration(configFile);
+        config.setDefaults(config);
         Logger.log(Logger.LogLevel.SUCCESS, "File config.yml was loaded");
         msgs = YamlConfiguration.loadConfiguration(msgsFile);
         Logger.log(Logger.LogLevel.SUCCESS, "File msgs.yml was loaded");

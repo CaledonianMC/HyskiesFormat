@@ -1,4 +1,4 @@
-# HyskiesFormat message file generated using HyskiesFormat-1.0-SNAPSHOT
+# HyskiesFormat message file generated using HyskiesFormat-1.1-BETA
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 # Main Messages
@@ -8,6 +8,7 @@ console-error: '&cYou must be a player to execute this command.'
 player-not-found: '%prefix% That player was &bnot &ffound.'
 config-reload: '%prefix% The configuration is reloading...'
 404: '%prefix% That alias does &bnot exist&f. For help, type &b/hf help&f.'
+fake-unknown: '%prefix% &f&oUnknown command.'
 help-1:
   - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
   - '     &bHyskies Formatting'

@@ -19,21 +19,21 @@ public class Join implements Listener {
     public void join(PlayerJoinEvent e) {
         Player p = e.getPlayer();
         if (Files.config.getBoolean("enable-join") == true) {
-            if ((p.hasPermission(Files.perms.getString("staff")) && Files.config.getBoolean("enable-staff-join") == true) || (p.hasPermission(Files.perms.getString("join-1")))) {
+            if ((p.hasPermission(Files.perms.getString("join-1")))) {
                 String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-1").replace("%player%", p.getName()).replace("%prefix%", prefix));
-                e.setJoinMessage(Utils.chat(msg));
+                Bukkit.broadcastMessage(Utils.chat(msg));
             } else if (p.hasPermission(Files.perms.getString("join-2"))) {
                 String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-2").replace("%player%", p.getName()).replace("%prefix%", prefix));
-                e.setJoinMessage(Utils.chat(msg));
+                Bukkit.broadcastMessage(Utils.chat(msg));
             } else if (p.hasPermission(Files.perms.getString("join-3"))) {
                 String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-3").replace("%player%", p.getName()).replace("%prefix%", prefix));
-                e.setJoinMessage(Utils.chat(msg));
+                Bukkit.broadcastMessage(Utils.chat(msg));
             } else if (p.hasPermission(Files.perms.getString("join-4"))) {
                 String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-4").replace("%player%", p.getName()).replace("%prefix%", prefix));
-                e.setJoinMessage(Utils.chat(msg));
+                Bukkit.broadcastMessage(Utils.chat(msg));
             } else if (p.hasPermission(Files.perms.getString("join-5"))) {
                 String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-5").replace("%player%", p.getName()).replace("%prefix%", prefix));
-                e.setJoinMessage(Utils.chat(msg));
+                Bukkit.broadcastMessage(Utils.chat(msg));
             } else {
                 return;
             }

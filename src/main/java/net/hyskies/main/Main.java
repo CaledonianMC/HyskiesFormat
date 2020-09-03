@@ -25,7 +25,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new Death(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new Join(), this);
 
-        Logger.log(Logger.LogLevel.SUCCESS, "HyskiesFormat fully loaded and enabled.");
+        Logger.log(Logger.LogLevel.INFO, "HyskiesFormat fully loaded and enabled.");
     }
 
     @Override

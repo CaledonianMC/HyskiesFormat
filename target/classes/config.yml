@@ -1,4 +1,4 @@
-# HyskiesFormat configuration file generated using HyskiesFormat-1.0-SNAPSHOT
+# HyskiesFormat configuration file generated using HyskiesFormat-1.1-BETA
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 # Core-Cmd
@@ -10,6 +10,4 @@ enable-custom-mmessages: true
 
 # Join / Leave Msgs
 enable-join: true
-enable-staff-join: false
 enable-leave: false
-enable-staff-leave: false

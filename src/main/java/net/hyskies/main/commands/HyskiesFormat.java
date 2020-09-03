@@ -44,7 +44,7 @@ public class HyskiesFormat implements CommandHandler {
                             sender.sendMessage(Utils.chat(x));
                         }
                     }
-                }
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("fake-unknown")).replace("%prefix%", prefix));}
             } else if (args.length >= 1) {
                 if (args.length == 1 && args[0].equalsIgnoreCase("help")) {
                     List<String> help1 = Files.msgs.getStringList("help-1");
