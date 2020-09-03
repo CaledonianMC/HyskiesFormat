@@ -37,6 +37,11 @@ join-2: 'hyskiesformatting.join.2'
 join-3: 'hyskiesformatting.join.3'
 join-4: 'hyskiesformatting.join.4'
 join-5: 'hyskiesformatting.join.5'
+join-6: 'hyskiesformatting.join.6'
+join-7: 'hyskiesformatting.join.7'
+join-8: 'hyskiesformatting.join.8'
+join-9: 'hyskiesformatting.join.9'
+join-10: 'hyskiesformatting.join.10'
 
 # Leave Permissions
 leave-1: 'hyskiesformatting.leave.1'

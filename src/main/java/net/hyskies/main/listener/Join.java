@@ -34,11 +34,22 @@ public class Join implements Listener {
             } else if (p.hasPermission(Files.perms.getString("join-5"))) {
                 String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-5").replace("%player%", p.getName()).replace("%prefix%", prefix));
                 Bukkit.broadcastMessage(Utils.chat(msg));
-            } else {
-                return;
+            } else if (p.hasPermission(Files.perms.getString("join-6"))) {
+                String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-6").replace("%player%", p.getName()).replace("%prefix%", prefix));
+                Bukkit.broadcastMessage(Utils.chat(msg));
+            } else if (p.hasPermission(Files.perms.getString("join-7"))) {
+                String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-7").replace("%player%", p.getName()).replace("%prefix%", prefix));
+                Bukkit.broadcastMessage(Utils.chat(msg));
+            } else if (p.hasPermission(Files.perms.getString("join-8"))) {
+                String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-8").replace("%player%", p.getName()).replace("%prefix%", prefix));
+                Bukkit.broadcastMessage(Utils.chat(msg));
+            } else if (p.hasPermission(Files.perms.getString("join-9"))) {
+                String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-9").replace("%player%", p.getName()).replace("%prefix%", prefix));
+                Bukkit.broadcastMessage(Utils.chat(msg));
+            } else if (p.hasPermission(Files.perms.getString("join-10"))) {
+                String msg = PlaceholderAPI.setPlaceholders(p, Files.msgs.getString("join-10").replace("%player%", p.getName()).replace("%prefix%", prefix));
+                Bukkit.broadcastMessage(Utils.chat(msg));
             }
-        } else {
-            return;
         }
     }
 }
