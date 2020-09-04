@@ -20,3 +20,9 @@ commands:
     description: Open a remote enchanting table
   furnace:
     description: Open a remote furnace
+  togglejoin:
+    description: Toggle the ability of seeing join messages
+    aliases: [tj, togglej]
+  toggledeath:
+    description: Toggle the ability of seeing death messages
+    aliases: [td, toggled]

@@ -1,5 +1,7 @@
 package net.hyskies.main.managers;
 
+import net.hyskies.main.commands.ToggleDeath;
+import net.hyskies.main.commands.ToggleJoin;
 import net.hyskies.main.commands.HyskiesFormat;
 import net.hyskies.main.commands.virtual.*;
 import org.bukkit.command.Command;
@@ -7,6 +9,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,6 +29,9 @@ public class CommandManager implements CommandExecutor {
         commands.put("craft", new Craftingtable());
         commands.put("enchant", new Enchanting());
         commands.put("furnace", new Furnace());
+        // Testing
+        commands.put("togglejoin", new ToggleJoin());
+        commands.put("toggledeath", new ToggleDeath());
         registerCommands();
     }
     private void registerCommands() { commands.forEach((s, c) -> javaPlugin.getCommand(s).setExecutor(this));}
@@ -34,7 +40,13 @@ public class CommandManager implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         String cmdname = command.getName();
         CommandHandler commandHandler = commands.get(cmdname);
-        if(commandHandler != null) commandHandler.execute(sender, command,args);
+        if(commandHandler != null) {
+            try {
+                commandHandler.execute(sender, command,args);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         return false;
     }
 }

@@ -56,3 +56,8 @@ brew: 'hyskiesformatting.brew'
 crafting-table: 'hyskiesformatting.craft'
 enchant: 'hyskiesformatting.enchant'
 furnace: 'hyskiesformatting.furnace'
+
+toggles:
+  join: 'hyskiesformatting.toggle.join'
+  leave: 'hyskiesformatting.toggle.join'
+  death: 'hyskiesformatting.toggle.join'

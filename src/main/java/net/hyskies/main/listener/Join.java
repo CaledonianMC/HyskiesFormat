@@ -12,6 +12,9 @@ import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.Inventory;
 
+import java.io.IOException;
+import java.util.UUID;
+
 public class Join implements Listener {
     String prefix = Utils.chat(Files.msgs.getString("prefix"));
 
@@ -51,5 +54,16 @@ public class Join implements Listener {
                 Bukkit.broadcastMessage(Utils.chat(msg));
             }
         }
+    }
+    @EventHandler
+    public void database(PlayerJoinEvent e) throws IOException {
+        Player p = e.getPlayer();
+        UUID uuid = p.getUniqueId();
+        Files.data.set(uuid+".name", p.getName());
+        Files.data.set(uuid+".join", true);
+        Files.data.set(uuid+".death", true);
+        // Reload
+        Files.saveData();
+        Files.reloadData();
     }
 }

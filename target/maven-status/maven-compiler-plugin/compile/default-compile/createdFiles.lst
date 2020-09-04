@@ -1,3 +1,4 @@
+net\hyskies\main\commands\ToggleJoin.class
 net\hyskies\main\managers\CommandManager.class
 net\hyskies\main\listener\Join.class
 net\hyskies\main\utils\Logger$LogLevel.class
@@ -5,6 +6,7 @@ net\hyskies\main\utils\Logger.class
 net\hyskies\main\utils\Files.class
 net\hyskies\main\commands\HyskiesFormat.class
 net\hyskies\main\Main.class
+net\hyskies\main\commands\ToggleDeath.class
 net\hyskies\main\utils\Utils.class
 net\hyskies\main\commands\virtual\Enchanting.class
 net\hyskies\main\commands\virtual\Anvil.class
@@ -12,5 +14,6 @@ net\hyskies\main\listener\Death.class
 net\hyskies\main\commands\virtual\Craftingtable.class
 net\hyskies\main\managers\CommandHandler.class
 net\hyskies\main\commands\virtual\Brewing.class
+net\hyskies\main\utils\Database.class
 net\hyskies\main\utils\Logger$1.class
 net\hyskies\main\commands\virtual\Furnace.class

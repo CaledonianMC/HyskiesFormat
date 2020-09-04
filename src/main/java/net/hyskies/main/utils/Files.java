@@ -18,6 +18,9 @@ public class Files {
     public static File permFile;
     public static YamlConfiguration perms;
 
+    public static File dataFile;
+    public static YamlConfiguration data;
+
     public static void base(Main m) {
         if (!m.getDataFolder().exists()) {
             m.getDataFolder().mkdirs();
@@ -43,6 +46,13 @@ public class Files {
             m.saveResource("perms.yml", false);
             Logger.log(Logger.LogLevel.SUCCESS, "File perms.yml was created.");
         }
+        // database.yml
+        dataFile = new File(m.getDataFolder(), "database.yml");
+        if (!dataFile.exists()) {
+            Logger.log(Logger.LogLevel.INFO, "File database.yml doesn't exist, creating one...");
+            m.saveResource("database.yml", false);
+            Logger.log(Logger.LogLevel.SUCCESS, "File database.yml was created.");
+        }
 
         config = YamlConfiguration.loadConfiguration(configFile);
         config.setDefaults(config);
@@ -51,12 +61,16 @@ public class Files {
         Logger.log(Logger.LogLevel.SUCCESS, "File msgs.yml was loaded");
         perms = YamlConfiguration.loadConfiguration(permFile);
         Logger.log(Logger.LogLevel.SUCCESS, "File perms.yml was loaded");
+        data = YamlConfiguration.loadConfiguration(dataFile);
+        Logger.log(Logger.LogLevel.SUCCESS, "File database.yml was loaded");
     }
     public static void reloadConfig() {config = YamlConfiguration.loadConfiguration(configFile);}
     public static void reloadMsgs() {config = YamlConfiguration.loadConfiguration(msgsFile);}
     public static void reloadPerms() {config = YamlConfiguration.loadConfiguration(permFile);}
+    public static void reloadData() {config = YamlConfiguration.loadConfiguration(dataFile);}
 
     public static void saveConfig() throws IOException {config.save(configFile);}
     public static void saveMsgs() throws IOException {msgs.save(msgsFile);}
     public static void savePerms() throws IOException {perms.save(permFile);}
+    public static void saveData() throws IOException{data.save(dataFile);}
 }

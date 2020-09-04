@@ -80,3 +80,14 @@ brew: '%prefix% You opened a remote &bBrewing Stand&f.'
 crafting-table: '%prefix% You opened a remote &bCrafting Table&f.'
 enchant: '%prefix% You opened a remote &bEnchanting Table&f.'
 furnace: '%prefix% You opened a remote &bFurnace&f.'
+
+# Toggles
+toggles:
+  join:
+    - '%prefix% You &b%toggle% &fyour &bjoin &fmessages.'
+    - '&7&o(( Type &f&o/togglejoins &7&oto toggle it ))'
+  death:
+    - '%prefix% You &b%toggle% &fyour &bdeath &fmessages.'
+    - '&7&o(( Type &f&o/toggledeath &7&oto toggle it ))'
+  enabled: 'Enabled'
+  disabled: 'Disabled'
