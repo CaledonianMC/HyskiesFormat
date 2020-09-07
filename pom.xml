@@ -6,7 +6,7 @@
 
     <groupId>net.hyskies</groupId>
     <artifactId>HyskiesFormat</artifactId>
-    <version>1.1-BETA</version>
+    <version>1.3</version>
     <packaging>jar</packaging>
 
     <name>HyskiesFormat</name>

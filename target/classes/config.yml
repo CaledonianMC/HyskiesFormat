@@ -1,13 +1,10 @@
-# HyskiesFormat configuration file generated using HyskiesFormat-1.1-BETA
+# HyskiesFormat configuration file generated using HyskiesFormat-1.3
 # This plugin mainly supports 1.8.8, but may work in later versions
 
-# Core-Cmd
-enable-core-cmd: true
-
 # Death Msgs
-enable-death-messages: true
-enable-custom-mmessages: true
+death:
+  enable-death: true
 
-# Join / Leave Msgs
-enable-join: true
-enable-leave: false
+join-leave:
+  enable-join: true
+  enable-leave: false

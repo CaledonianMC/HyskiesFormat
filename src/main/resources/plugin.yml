@@ -10,6 +10,12 @@ commands:
   hyskiesformat:
     description: Main plugin command
     aliases: [hf, hyskies, hyskiesf]
+  togglejoin:
+    description: Toggle the ability of seeing join messages
+    aliases: [tj, togglej, togglejoins]
+  toggledeath:
+    description: Toggle the ability of seeing death messages
+    aliases: [td, toggled, toggledeaths]
   anvil:
     description: Open a remote anvil
   brew:
@@ -20,9 +26,3 @@ commands:
     description: Open a remote enchanting table
   furnace:
     description: Open a remote furnace
-  togglejoin:
-    description: Toggle the ability of seeing join messages
-    aliases: [tj, togglej, togglejoins]
-  toggledeath:
-    description: Toggle the ability of seeing death messages
-    aliases: [td, toggled, toggledeaths]

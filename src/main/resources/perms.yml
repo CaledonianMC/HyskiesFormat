@@ -3,11 +3,23 @@
 
 # Core Permissions
 core-cmd: 'hyskiesformat.corecmd'
-reload: 'hyskiesformat.reload'
 staff: 'hyskiesformat.staff'
+admin-perms:
+  reload: 'hyskiesformat.reload'
+  togglejoin: 'hyskiesformat.admin.togglejoin'
+  toggledeath: 'hyskiesformat.admin.toggledeath'
 
-# Modules
-admin-togglejoin: 'hyskiesformat.admin.togglejoin'
+# Remote Tables
+anvil: 'hyskiesformatting.anvil'
+brew: 'hyskiesformatting.brew'
+crafting-table: 'hyskiesformatting.craft'
+enchant: 'hyskiesformatting.enchant'
+furnace: 'hyskiesformatting.furnace'
+
+toggles:
+  join: 'hyskiesformatting.toggle.join'
+  leave: 'hyskiesformatting.toggle.join'
+  death: 'hyskiesformatting.toggle.join'
 
 # Death Permssions
 1: 'hyskiesformatting.death.1'
@@ -49,15 +61,3 @@ leave-2: 'hyskiesformatting.leave.2'
 leave-3: 'hyskiesformatting.leave.3'
 leave-4: 'hyskiesformatting.leave.4'
 leave-5: 'hyskiesformatting.leave.5'
-
-# Remote Tables
-anvil: 'hyskiesformatting.anvil'
-brew: 'hyskiesformatting.brew'
-crafting-table: 'hyskiesformatting.craft'
-enchant: 'hyskiesformatting.enchant'
-furnace: 'hyskiesformatting.furnace'
-
-toggles:
-  join: 'hyskiesformatting.toggle.join'
-  leave: 'hyskiesformatting.toggle.join'
-  death: 'hyskiesformatting.toggle.join'

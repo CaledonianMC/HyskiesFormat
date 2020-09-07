@@ -1,4 +1,4 @@
-# HyskiesFormat message file generated using HyskiesFormat-1.1-BETA
+# HyskiesFormat message file generated using HyskiesFormat-1.3
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 # Main Messages
@@ -8,7 +8,7 @@ console-error: '&cYou must be a player to execute this command.'
 player-not-found: '%prefix% That player was &bnot &ffound.'
 config-reload: '%prefix% The configuration is reloading...'
 404: '%prefix% That alias does &bnot exist&f. For help, type &b/hf help&f.'
-fake-unknown: '%prefix% &f&oUnknown command.'
+module-toggled: '%prefix% You fully %toggle% the &b%module% &fmodule.'
 help-1:
   - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
   - '     &bHyskies Formatting'
@@ -23,6 +23,8 @@ help-2:
   - '     &bHyskies Formatting &7(Admin)'
   - '&f * &b/hyskiesformatting &8- &fMain command'
   - '&f * &b/hf reload &8- &fReload all configuration files.'
+  - '&f * &b/hf togglejoin &8- &fToggle ALL join messages.'
+  - '&f * &b/hf toggledeath &8- &fToggle ALL death messages.'
   - '&f '
   - '&7&o(( &f&oView &7&ouser commands with &f&o/hf help &7&o))'
   - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
@@ -34,6 +36,25 @@ core-cmd-user:
 core-cmd-admin:
   - '%prefix% This server is running &bHyskiesFormat &fby &bCaledonian EH &fv&b%version%'
   - '&7&o(( Type &f&o/hyskiesformat help &7&ofor more &f&oInformation ))'
+
+
+# Remote Tables
+anvil: '%prefix% You opened a remote &bAnvil&f.'
+brew: '%prefix% You opened a remote &bBrewing Stand&f.'
+crafting-table: '%prefix% You opened a remote &bCrafting Table&f.'
+enchant: '%prefix% You opened a remote &bEnchanting Table&f.'
+furnace: '%prefix% You opened a remote &bFurnace&f.'
+
+# Toggles
+toggles:
+  join:
+    - '%prefix% You &b%toggle% &fyour &bjoin &fmessages.'
+    - '&7&o(( Type &f&o/togglejoins &7&oto toggle it ))'
+  death:
+    - '%prefix% You &b%toggle% &fyour &bdeath &fmessages.'
+    - '&7&o(( Type &f&o/toggledeath &7&oto toggle it ))'
+  enabled: 'enabled'
+  disabled: 'disabled'
 
 # Death Messages
 # PLACEHOLDERS: %prefix%, %killer%, %player%, %weapon%
@@ -73,21 +94,3 @@ leave-2: '%prefix% &b%player% &fleft.'
 leave-3: '%prefix% &b%player% &fleft.'
 leave-4: 'hyskiesformatting.leave.4'
 leave-5: 'hyskiesformatting.leave.5'
-
-# Remote Tables
-anvil: '%prefix% You opened a remote &bAnvil&f.'
-brew: '%prefix% You opened a remote &bBrewing Stand&f.'
-crafting-table: '%prefix% You opened a remote &bCrafting Table&f.'
-enchant: '%prefix% You opened a remote &bEnchanting Table&f.'
-furnace: '%prefix% You opened a remote &bFurnace&f.'
-
-# Toggles
-toggles:
-  join:
-    - '%prefix% You &b%toggle% &fyour &bjoin &fmessages.'
-    - '&7&o(( Type &f&o/togglejoins &7&oto toggle it ))'
-  death:
-    - '%prefix% You &b%toggle% &fyour &bdeath &fmessages.'
-    - '&7&o(( Type &f&o/toggledeath &7&oto toggle it ))'
-  enabled: 'Enabled'
-  disabled: 'Disabled'

@@ -22,29 +22,23 @@ public class HyskiesFormat implements CommandHandler {
         this.plugin = plugin;
     }
     @Override
-    public void execute(CommandSender sender, Command command, String[] args){
+    public void execute(CommandSender sender, Command command, String[] args) throws IOException {
         String prefix = Utils.chat(Files.msgs.getString("prefix"));
         String ver = plugin.getDescription().getVersion();
         if (sender instanceof Player) {
             Player p = (Player) sender;
             if (args.length == 0) {
-                if (Files.config.getBoolean("enable-core-cmd") == true) {
                     if (p.hasPermission(Files.perms.getString("core-cmd"))) {
-                        List<String> msg1 = Files.msgs.getStringList("core-cmd-admin");
-                        for (String x : msg1) {
-                            x = x.replace("%prefix%", prefix);
-                            x = x.replace("%version%", ver);
-                            sender.sendMessage(Utils.chat(x));
+                        List<String> help1 = Files.msgs.getStringList("core-cmd-admin");
+                        for (String x : help1) {
+                            sender.sendMessage(Utils.chat(x).replace("%prefix%", prefix).replace("%version%", ver));
                         }
                     } else {
-                        List<String> msg2 = plugin.getConfig().getStringList("core-cmd-user");
-                        for (String x : msg2) {
-                            x = x.replace("%prefix%", prefix);
-                            x = x.replace("%version%", ver);
-                            sender.sendMessage(Utils.chat(x));
+                        List<String> help1 = Files.msgs.getStringList("core-cmd-user");
+                        for (String x : help1) {
+                            sender.sendMessage(Utils.chat(x).replace("%prefix%", prefix));
                         }
                     }
-                }else{p.sendMessage(Utils.chat(Files.msgs.getString("fake-unknown")).replace("%prefix%", prefix));}
             } else if (args.length >= 1) {
                 if (args.length == 1 && args[0].equalsIgnoreCase("help")) {
                     List<String> help1 = Files.msgs.getStringList("help-1");
@@ -56,29 +50,15 @@ public class HyskiesFormat implements CommandHandler {
                     for (String x : help2) {
                         sender.sendMessage(Utils.chat(x));
                     }
-                } else if (args[0].equalsIgnoreCase("reload")) {
-                    if (sender instanceof Player) {
-                        if (p.hasPermission(Files.perms.getString("reload"))) {
-                            p.sendMessage(Utils.chat(Files.msgs.getString("config-reload")).replace("%prefix%", prefix));
-                            Logger.log(Logger.LogLevel.INFO, "&b" + p.getName() + " &fjust reloaded all configs.");
-                            reload();
-                        } else {
-                            p.sendMessage(Utils.chat(Files.msgs.getString("no-permission")));
-                        }
-                    } else {
-                        Bukkit.getConsoleSender().sendMessage(Files.msgs.getString("config-reload").replace("%prefix%", prefix));
-                        Bukkit.getConsoleSender().sendMessage("The console reloaded all configs.");
-                        reload();
-                    }
-                }else{
-                    p.sendMessage(Utils.chat(Files.msgs.getString("404")).replace("%prefix%", prefix));
-                }
+                } else if (args[0].equalsIgnoreCase("ver")) {
+                    p.sendMessage(Utils.chat("%prefix% You're currently running HyskiesFormat &bv%version%&f.").replace("%prefix%", prefix).replace("%version%", ver));
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("404").replace("%prefix%", prefix)));}
             }
         } else {
             Bukkit.getConsoleSender().sendMessage(Utils.chat(Files.msgs.getString("console-error")));
         }
     }
-    private static void reload() {
+    private static void reload(){
         Logger.log(Logger.LogLevel.INFO, "Reloading config.yml...");
         Files.reloadConfig();
         Logger.log(Logger.LogLevel.SUCCESS, "The file config.yml was reloaded");
