@@ -8,3 +8,29 @@ death:
 join-leave:
   enable-join: true
   enable-leave: false
+
+inventory:
+  join:
+    name: '&bJoin &fMessage'
+    title: '&f&lJOIN MESSAGE | &b&lPRESET %num%'
+    lore:
+      - '&f '
+      - '%message%'
+      - '&f '
+      - '%status%'
+    status:
+      no-permission: '&c&o(( You have &nnot&r&c&o unlocked this preset ))'
+      use: '&7&o(( &f&oClick &7&oto equip this preset ))'
+      equiped: '&a&o(( Equipped ))'
+    buttons:
+      remove:
+        title: '&4&l(!) &c&lREMOVE JOIN MSG'
+        material: 'ARMOR_STAND'
+      back:
+        title: '&4&l(!) &c&lNO PREVIOUS PAGE'
+        material: 'PAPER'
+      next:
+        title: '&4&l(!) &c&lNO NEXT PAGE'
+        material: 'PAPER'
+    heads:
+      1: 'CHEST'

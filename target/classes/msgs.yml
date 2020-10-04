@@ -2,7 +2,7 @@
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 # Main Messages
-prefix: '&8(&b&lH&f&lS&8) &f'
+prefix: '&8(&b&lH&f&lS&8)&f'
 no-permission: '%prefix% You do not have permission to execute this command.'
 console-error: '&cYou must be a player to execute this command.'
 player-not-found: '%prefix% That player was &bnot &ffound.'
@@ -55,6 +55,8 @@ toggles:
     - '&7&o(( Type &f&o/toggledeath &7&oto toggle it ))'
   enabled: 'enabled'
   disabled: 'disabled'
+  join-hover: '&b&l(!) &bClick &fto &btoggle &fviewing join messages.'
+  death-hover: '&b&l(!) &bClick &fto &btoggle &fviewing death messages.'
 
 # Death Messages
 # PLACEHOLDERS: %prefix%, %killer%, %player%, %weapon%
@@ -94,3 +96,16 @@ leave-2: '%prefix% &b%player% &fleft.'
 leave-3: '%prefix% &b%player% &fleft.'
 leave-4: 'hyskiesformatting.leave.4'
 leave-5: 'hyskiesformatting.leave.5'
+
+inventory:
+  general:
+    previous-page: '%prefix% The previous page &bdoes not &fexist.'
+    next-page: '%prefix% The next page &bdoes not &fexist.'
+  death:
+    open: '%prefix% You opened the &bdeath messages &fmenu.'
+    set: '%prefix% You set your &bdeath message &fto preset &b%num%&f.'
+    reset: '%prefix% You just &bremoved &fyour death message.'
+  join:
+    open: '%prefix% You opened the &bjoin messages &fmenu.'
+    set: '%prefix% You set your &bjoin message &fto preset &b%num%&f.'
+    reset: '%prefix% You just &bremoved &fyour join message.'

@@ -1,14 +1,12 @@
 package net.hyskies.main.listener;
 
-import net.hyskies.main.utils.Files;
-import org.bukkit.Bukkit;
+import net.hyskies.main.utils.files.Data;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.IOException;
 import java.util.UUID;
 
 public class Database implements Listener {
@@ -18,20 +16,16 @@ public class Database implements Listener {
     }
     @EventHandler
     public void database(PlayerJoinEvent e) {
-        Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
             Player p = e.getPlayer();
             UUID uuid = p.getUniqueId();
-            Files.data.set(uuid+".name", p.getName());
-            if(!Files.data.contains(uuid+".join")){Files.data.set(uuid+".join", true);}
-            if(!Files.data.contains(uuid+".death")){Files.data.set(uuid+".death", true);}
-            if(!Files.data.contains(uuid+".leave")){Files.data.set(uuid+".leave", false);}
+            Data.get().set(uuid+".name", p.getName());
+            if(!Data.get().contains(uuid+".join")){Data.get().set(uuid+".join", true);}
+            if(!Data.get().contains(uuid+".death")){Data.get().set(uuid+".death", true);}
+            if(!Data.get().contains(uuid+".leave")){Data.get().set(uuid+".leave", false);}
+            if(!Data.get().contains(uuid+".join-message")){Data.get().set(uuid+".join-message", 0);}
+            if(!Data.get().contains(uuid+".death-message")){Data.get().set(uuid+".death-message", 0);}
+            
             // Reload
-            try {
-                Files.saveData();
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-            Files.reloadData();
-                });
+            Data.save();
     }
 }

@@ -1,7 +1,8 @@
 package net.hyskies.main.commands;
 
 import net.hyskies.main.managers.CommandHandler;
-import net.hyskies.main.utils.Files;
+import net.hyskies.main.utils.files.Data;
+import net.hyskies.main.utils.files.Files;
 import net.hyskies.main.utils.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -20,7 +21,7 @@ public class ToggleJoin implements CommandHandler {
             Player p = (Player) sender;
             UUID uuid = p.getUniqueId();
             if (p.hasPermission(Files.perms.getString("toggles.join"))) {
-                if (Files.data.getBoolean(uuid + ".join") == true) {
+                if (Data.get().getBoolean(uuid + ".join") == true) {
                     String toggle = Files.msgs.getString("toggles.disabled");
                     List<String> msg1 = Files.msgs.getStringList("toggles.join");
                     for (String x : msg1) {
@@ -29,9 +30,8 @@ public class ToggleJoin implements CommandHandler {
                         sender.sendMessage(Utils.chat(x));
                     }
                     // Data
-                    Files.data.set(uuid + ".join", false);
-                    Files.saveData();
-                    Files.reloadData();
+                    Data.get().set(uuid+".join", false);
+                    Data.save();
                 } else {
                     String toggle = Files.msgs.getString("toggles.enabled");
                     List<String> msg1 = Files.msgs.getStringList("toggles.join");
@@ -41,9 +41,8 @@ public class ToggleJoin implements CommandHandler {
                         sender.sendMessage(Utils.chat(x));
                     }
                     // Data
-                    Files.data.set(uuid + ".join", true);
-                    Files.saveData();
-                    Files.reloadData();
+                    Data.get().set(uuid+".join", true);
+                    Data.save();
                 }
             }else{p.sendMessage(Utils.chat(Files.msgs.getString("no-permission").replace("%prefix%", prefix)));}
         } else {

@@ -1,8 +1,7 @@
 package net.hyskies.main.commands;
 
-import net.hyskies.main.Main;
 import net.hyskies.main.managers.CommandHandler;
-import net.hyskies.main.utils.Files;
+import net.hyskies.main.utils.files.Files;
 import net.hyskies.main.utils.Logger;
 import net.hyskies.main.utils.Utils;
 import org.bukkit.Bukkit;
@@ -13,8 +12,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
 import java.util.List;
-
-import static net.hyskies.main.utils.Files.saveConfig;
 
 public class HyskiesFormat implements CommandHandler {
     private JavaPlugin plugin;

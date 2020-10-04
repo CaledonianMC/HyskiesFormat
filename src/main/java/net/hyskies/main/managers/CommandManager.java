@@ -3,6 +3,8 @@ package net.hyskies.main.managers;
 import net.hyskies.main.commands.ToggleDeath;
 import net.hyskies.main.commands.ToggleJoin;
 import net.hyskies.main.commands.HyskiesFormat;
+import net.hyskies.main.commands.inventory.DeathGUI;
+import net.hyskies.main.commands.inventory.JoinGUI;
 import net.hyskies.main.commands.virtual.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -29,6 +31,9 @@ public class CommandManager implements CommandExecutor {
         commands.put("craft", new Craftingtable());
         commands.put("enchant", new Enchanting());
         commands.put("furnace", new Furnace());
+
+        commands.put("death", new DeathGUI());
+        commands.put("join", new JoinGUI());
         // Testing
         commands.put("togglejoin", new ToggleJoin());
         commands.put("toggledeath", new ToggleDeath());

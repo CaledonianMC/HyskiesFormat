@@ -26,3 +26,9 @@ commands:
     description: Open a remote enchanting table
   furnace:
     description: Open a remote furnace
+  death:
+    description: Open a death message selection GUI
+    aliases: [deathgui, deathmenu, deathmsg, deathmessages]
+  join:
+    description: Open a join message selection GUI
+    aliases: [joingui, joinmenu, joinmsg, joinmessages]

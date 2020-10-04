@@ -31,5 +31,10 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="headdatabase-api" />
+      <option name="name" value="headdatabase-api" />
+      <option name="url" value="https://mvn.intellectualsites.com/content/repositories/thirdparty/" />
+    </remote-repository>
   </component>
 </project>

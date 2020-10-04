@@ -2,7 +2,7 @@ package net.hyskies.main.commands.virtual;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.hyskies.main.managers.CommandHandler;
-import net.hyskies.main.utils.Files;
+import net.hyskies.main.utils.files.Files;
 import net.hyskies.main.utils.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
