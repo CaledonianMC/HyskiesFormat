@@ -55,17 +55,4 @@ public class HyskiesFormat implements CommandHandler {
             Bukkit.getConsoleSender().sendMessage(Utils.chat(Files.msgs.getString("console-error")));
         }
     }
-    private static void reload(){
-        Logger.log(Logger.LogLevel.INFO, "Reloading config.yml...");
-        Files.reloadConfig();
-        Logger.log(Logger.LogLevel.SUCCESS, "The file config.yml was reloaded");
-
-        Logger.log(Logger.LogLevel.INFO, "Reloading msgs.yml...");
-        Files.reloadMsgs();
-        Logger.log(Logger.LogLevel.SUCCESS, "The file msgs.yml was reloaded");
-
-        Logger.log(Logger.LogLevel.INFO, "Reloading perms.yml...");
-        Files.reloadPerms();
-        Logger.log(Logger.LogLevel.SUCCESS, "The file perms.yml was reloaded");
-    }
 }

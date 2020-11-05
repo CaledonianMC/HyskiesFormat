@@ -24,165 +24,223 @@ public class DeathInventory implements Listener {
         if(e.getClickedInventory().getTitle().equalsIgnoreCase(Utils.chat("&bDeath &fMessages"))){
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 1"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &2&lPRESET 1"))){
                 Integer num = 1;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 2
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 2"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &e&lPRESET 2"))){
                 Integer num = 2;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 3"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &8&lPRESET 3"))){
                 Integer num = 3;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 4"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &a&lPRESET 4"))){
                 Integer num = 4;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 5"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &5&lPRESET 5"))){
                 Integer num = 5;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 6"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &9&lPRESET 6"))){
                 Integer num = 6;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 7"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &d&lPRESET 7"))){
                 Integer num = 7;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 8"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &7&lPRESET 8"))){
                 Integer num = 8;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 9"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &c&lPRESET 9"))){
                 Integer num = 9;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 10"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &6&lPRESET 10"))){
                 Integer num = 10;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 11"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &a&lPRESET 11"))){
                 Integer num = 11;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 12"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &2&lPRESET 12"))){
                 Integer num = 12;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 13"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &e&lPRESET 13"))){
                 Integer num = 13;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 14"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &8&lPRESET 14"))){
                 Integer num = 14;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 15"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &5&lPRESET 15"))){
                 Integer num = 15;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 16"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &9&lPRESET 16"))){
                 Integer num = 16;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 17"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &d&lPRESET 17"))){
                 Integer num = 17;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // 1
-            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &b&lPRESET 18"))){
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &7&lPRESET 18"))){
                 Integer num = 18;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
+            }
+
+            // 1
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &c&lPRESET 19"))){
+                Integer num = 19;
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
+            }
+
+            // 1
+            if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&f&lDEATH MESSAGE ｜ &7&lPRESET 20"))){
+                Integer num = 20;
+                if(p.hasPermission(Files.perms.getString(num.toString()))){
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.set").replace("%prefix%", prefix).replace("%num%", num.toString())));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }else{p.sendMessage(Utils.chat(Files.msgs.getString("inventory.general.not-unlocked").replace("%prefix%", prefix)));}
             }
 
             // Previous
@@ -196,10 +254,14 @@ public class DeathInventory implements Listener {
             // Remove
             if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&4&l(!) &c&lREMOVE DEATH MSG"))){
                 Integer num = 0;
-                p.closeInventory();
-                p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.reset").replace("%prefix%", prefix)));
-                Data.get().set(uuid+".death-message", num);
-                Data.save();
+                if(Data.get().getInt(uuid+"death-message") == num){
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.already-reset").replace("%prefix%", prefix)));
+                }else{
+                    p.closeInventory();
+                    p.sendMessage(Utils.chat(Files.msgs.getString("inventory.death.reset").replace("%prefix%", prefix)));
+                    Data.get().set(uuid+".death-message", num);
+                    Data.save();
+                }
             }
 
             e.setCancelled(true);

@@ -1,31 +1,20 @@
 name: HyskiesFormat
-version: 1.3
+version: 1.4
 main: net.hyskies.main.Main
 prefix: HyskiesFormat
-softdepend: [PlaceholderAPI]
+softdepend: [PlaceholderAPI, HeadDatabase]
 authors: [Caledonian]
 description: Hyskies message formatting
 website: net.hyskies
 commands:
   hyskiesformat:
-    description: Main plugin command
-    aliases: [hf, hyskies, hyskiesf]
+    aliases: [hs, hyskiesformatting, hsformat]
   togglejoin:
     description: Toggle the ability of seeing join messages
     aliases: [tj, togglej, togglejoins]
   toggledeath:
     description: Toggle the ability of seeing death messages
     aliases: [td, toggled, toggledeaths]
-  anvil:
-    description: Open a remote anvil
-  brew:
-    description: Open a remote brewing stand
-  craft:
-    description: Open a remote crafting table
-  enchant:
-    description: Open a remote enchanting table
-  furnace:
-    description: Open a remote furnace
   death:
     description: Open a death message selection GUI
     aliases: [deathgui, deathmenu, deathmsg, deathmessages]

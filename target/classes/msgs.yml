@@ -1,4 +1,4 @@
-# HyskiesFormat message file generated using HyskiesFormat-1.3
+# HyskiesFormat message file generated using HyskiesFormat-1.4
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 # Main Messages
@@ -12,9 +12,10 @@ module-toggled: '%prefix% You fully %toggle% the &b%module% &fmodule.'
 help-1:
   - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
   - '     &bHyskies Formatting'
-  - '&f * &b/hyskiesformatting &8- &fMain command'
   - '&f * &b/togglejoin &8- &fToggle your join visibility.'
   - '&f * &b/toggledeaths &8- &fToggle your deaths visibility.'
+  - '&f * &b/join &8- &fOpen the join message selection menu.'
+  - '&f * &b/death &8- &fOpen the death message selection menu.'
   - '&f '
   - '&7&o(( &7&oYou do not have &f&oPermission &7&oto view admin cmds ))'
   - '&b*&8&m-----------&b*&8&m------------------&b*&8&m-----------&b*'
@@ -88,24 +89,25 @@ join-1: '%prefix% &b%player% &fcannonballed into your realm.'
 join-2: '%prefix% Our favorite &b%player% &fhas joined this realm.'
 join-3: '%prefix% &b%player% &fhas joined to grind that playtime top!'
 join-4: '%prefix% &b&lALERT, ALERT! &b%player% &fhas joined the scene.'
-join-5: '%prefix% &b%player% &fhas decided procrastination is just the best option.'
-
-# Leave Messages
-leave-1: '%prefix% &b%player% &fleft.'
-leave-2: '%prefix% &b%player% &fleft.'
-leave-3: '%prefix% &b%player% &fleft.'
-leave-4: 'hyskiesformatting.leave.4'
-leave-5: 'hyskiesformatting.leave.5'
+join-5: '%prefix% &b%player% &fjoined the realm, who brought the pizza?'
+join-6: '%prefix% &fWelcome &b%player%&f, turns out 50 pings works well.'
+join-7: '%prefix% &fMeow! &b%player% &fjust logged on after a long nap.'
+join-8: '%prefix% &b%player% &fjust joined. "Hello there, General Kenobi."'
+join-9: '%prefix% &b%player% &fjoined the group, &bwho brought the pizza?'
+join-11: '%prefix% Hippity Hoppity, &b%player% &fis about to step on your property.'
 
 inventory:
   general:
     previous-page: '%prefix% The previous page &bdoes not &fexist.'
     next-page: '%prefix% The next page &bdoes not &fexist.'
+    not-unlocked: '%prefix% You have &bnot &funlocked this preset.'
   death:
     open: '%prefix% You opened the &bdeath messages &fmenu.'
     set: '%prefix% You set your &bdeath message &fto preset &b%num%&f.'
     reset: '%prefix% You just &bremoved &fyour death message.'
+    already-reset: '%prefix% Your death message is &balready&f reset.'
   join:
     open: '%prefix% You opened the &bjoin messages &fmenu.'
     set: '%prefix% You set your &bjoin message &fto preset &b%num%&f.'
     reset: '%prefix% You just &bremoved &fyour join message.'
+    already-reset: '%prefix% Your join message is &balready&f reset.'

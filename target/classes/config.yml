@@ -1,4 +1,4 @@
-# HyskiesFormat configuration file generated using HyskiesFormat-1.3
+# HyskiesFormat configuration file generated using HyskiesFormat-1.4
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 # Death Msgs
@@ -9,28 +9,84 @@ join-leave:
   enable-join: true
   enable-leave: false
 
-inventory:
-  join:
-    name: '&bJoin &fMessage'
-    title: '&f&lJOIN MESSAGE | &b&lPRESET %num%'
-    lore:
-      - '&f '
-      - '%message%'
-      - '&f '
-      - '%status%'
-    status:
-      no-permission: '&c&o(( You have &nnot&r&c&o unlocked this preset ))'
-      use: '&7&o(( &f&oClick &7&oto equip this preset ))'
-      equiped: '&a&o(( Equipped ))'
-    buttons:
-      remove:
-        title: '&4&l(!) &c&lREMOVE JOIN MSG'
-        material: 'ARMOR_STAND'
-      back:
-        title: '&4&l(!) &c&lNO PREVIOUS PAGE'
-        material: 'PAPER'
-      next:
-        title: '&4&l(!) &c&lNO NEXT PAGE'
-        material: 'PAPER'
-    heads:
-      1: 'CHEST'
+join:
+  # General Inventory Information
+  base:
+    size: 36
+    name: "&bJoin &fMessages"
+    permission: 'hyskiesformat.inventory.join'
+    # Status Lore
+    equipped: '&a&o(( Currently Equipped ))'
+    not-equipped: '&7&o(( &f&oClick &7&oto &f&oequip &7&othis preset ))'
+    locked: '&c&o(( You have not &nunlocked&r &c&othis preset ))'
+    # Universal buttons
+  buttons:
+    previous:
+      name: '&4&l(!) &c&lNO PREVIOUS PAGE'
+      material: 'PAPER'
+      slot: 29
+    next:
+      name: '&4&l(!) &c&lNO NEXT PAGE'
+      material: 'PAPER'
+      slot: 33
+    remove:
+      name: '&4&l(!) &c&lREMOVE JOIN MSG'
+      lore:
+        - '&f '
+        - '&7&o(( &f&oClick &7&oto remove your &f&ojoin msg&7&o. ))'
+      material: 'ARMOR_STAND'
+      slot: 31
+      # All join messages
+  items:
+    1: # Name can be anything
+      name: '&f&lJOIN MESSAGE &r⎜ &b&lPRESET %num%&r'
+      lore:
+        - '&f '
+        - '%message%'
+        - '&f '
+        - '%status%'
+      material: CHEST
+      data: 0
+      slot: 0
+      amount: 1
+
+death:
+  # General Inventory Information
+  base:
+    size: 36
+    name: "&bDeath &fMessages"
+    permission: 'hyskiesformat.inventory.death'
+    # Status Lore
+    equipped: '&a&o(( Currently Equipped ))'
+    not-equipped: '&7&o(( &f&oClick &7&oto &f&oequip &7&othis preset ))'
+    locked: '&c&o(( You have not &nunlocked&r &c&othis preset ))'
+    # Universal buttons
+  buttons:
+    previous:
+      name: '&4&l(!) &c&lNO PREVIOUS PAGE'
+      material: 'PAPER'
+      slot: 29
+    next:
+      name: '&4&l(!) &c&lNO NEXT PAGE'
+      material: 'PAPER'
+      slot: 33
+    remove:
+      name: '&4&l(!) &c&lREMOVE JOIN MSG'
+      lore:
+        - '&f '
+        - '&7&o(( &f&oClick &7&oto remove your &f&odeath msg&7&o. ))'
+      material: 'ARMOR_STAND'
+      slot: 31
+      # All join messages
+  items:
+    1: # Name can be anything
+      name: '&f&lDEATH MESSAGE &r⎜ &b&lPRESET %num%&r'
+      lore:
+        - '&f '
+        - '%message%'
+        - '&f '
+        - '%status%'
+      material: CHEST
+      data: 0
+      slot: 0
+      amount: 1
